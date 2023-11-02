@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-5">
+                <form onsubmit="return validateForm();">
+                    <div class="mb-3 lg">
+                        <label class="form-label">Title</label>
+                        <input class="form-control" id="item-input">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label ">Description</label>
+                        <textarea class="form-control form-control-lg" id="description-input" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add to list</button>
+                    <button type="button" class="btn btn-primary" onclick="clearList()">Clear list</button>
+
+                </form>
+
+
+            </div>
+        </div>
+        <div class="container py-2">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-5">
+                    <h2>My items</h2>
+                    <p id="item-list"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+
+</body>
+</html>
